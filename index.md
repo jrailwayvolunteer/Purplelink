@@ -1,62 +1,382 @@
----
-layout: page
-title: Purplelink
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purplelink | 15 Stops for Less</title>
 
-# Purplelink
+<style>
+:root{
+    --light-purple:#F3ECFF;
+    --purple:#6F2DBD;
+    --dark-purple:#4B1D80;
+    --black:#1F1F1F;
+    --white:#FFFFFF;
+    --border:#D9C8F5;
+}
 
-## 15 Stops for Less
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-### Affordable rail travel for rail travellers
+html{
+    scroll-behavior:smooth;
+}
 
-Purplelink is a **student startup concept** exploring a low-cost train operator connecting **London, Birmingham and Manchester** with multiple intermediate stops.
+body{
+    font-family:"Gill Sans MT","Gill Sans",Calibri,sans-serif;
+    background:var(--light-purple);
+    color:var(--black);
+    line-height:1.6;
+}
 
-The idea is aimed at rail travellers looking for affordable long-distance rail travel while maintaining access to communities along the route.
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
 
----
+/* HEADER */
 
-## What We Offer
+header{
+    background:var(--dark-purple);
+    color:var(--white);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-### Low-Cost Travel
-A concept focused on offering affordable intercity rail journeys.
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
 
-### Connected Cities
-A proposed route linking London, Birmingham and Manchester.
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+}
 
-### More Stops
-Serving multiple communities along the corridor rather than focusing solely on express travel.
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:1.5rem;
+}
 
----
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
 
-## Proposed Route
+nav a:hover{
+    color:#E8D9FF;
+}
 
-**London → Birmingham → Manchester**
+/* HERO */
 
-Purplelink explores the possibility of operating rail services along this corridor with up to fifteen stops between the route endpoints.
+.hero{
+    padding:80px 0;
+}
 
----
+.hero-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
 
-## About The Project
+.hero h1{
+    color:var(--dark-purple);
+    font-size:3rem;
+    margin-bottom:1rem;
+}
 
-Purplelink is currently a university startup idea and is not an operating train company.
+.hero p{
+    font-size:1.15rem;
+    margin-bottom:1rem;
+}
 
-This website is intended to explain the concept and does not offer ticket sales, bookings or transport services.
+.tagline{
+    display:inline-block;
+    background:var(--purple);
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
 
----
+.hero-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
 
-## Frequently Asked Questions
+.hero-card h2{
+    color:var(--dark-purple);
+    margin-bottom:10px;
+}
 
-### Is Purplelink currently operating trains?
-No. Purplelink is a student startup concept and does not currently operate passenger services.
+/* SECTIONS */
 
-### Who is the target audience?
-Rail travellers seeking affordable travel between major cities and communities along the route.
+section{
+    padding:60px 0;
+}
 
-### What does "15 Stops for Less" mean?
-It reflects the concept of providing rail services that serve multiple communities while focusing on affordability.
+.section-title{
+    color:var(--dark-purple);
+    font-size:2.2rem;
+    margin-bottom:30px;
+    text-align:center;
+}
 
-### Can I buy tickets on this website?
-No. This website is informational only and does not provide ticket booking or payment facilities.
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
 
-### Is the project endorsed by a university?
-No university endorsement is claimed. The website presents a student startup concept only.
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid var(--border);
+}
+
+.card h3{
+    color:var(--dark-purple);
+    margin-bottom:10px;
+}
+
+.route-box{
+    background:white;
+    border-left:6px solid var(--purple);
+    padding:25px;
+    border-radius:10px;
+}
+
+/* FAQ */
+
+.faq details{
+    background:white;
+    margin-bottom:15px;
+    padding:18px;
+    border-radius:10px;
+    border:1px solid var(--border);
+}
+
+.faq summary{
+    font-weight:bold;
+    cursor:pointer;
+    color:var(--dark-purple);
+}
+
+.faq p{
+    margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--dark-purple);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <div class="logo">Purplelink</div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#route">Route</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div>
+            <div class="tagline">15 Stops for Less</div>
+
+            <h1>Low‑Cost Rail Travel Between London and Manchester via Birmingham</h1>
+
+            <p>
+                Purplelink is a student startup concept exploring affordable rail
+                services for passengers travelling between London, Birmingham,
+                Manchester and communities along the route.
+            </p>
+
+            <p>
+                The idea focuses on providing accessible rail travel through a route
+                with multiple stops while keeping costs lower for travellers.
+            </p>
+        </div>
+
+        <div class="hero-card">
+            <h2>Student Startup Concept</h2>
+            <p>
+                Purplelink is currently a university startup idea. This website
+                explains the concept and does not represent an operating train
+                company.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+
+        <h2 class="section-title">What We Offer</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Affordable Travel</h3>
+                <p>
+                    Exploring ways to make intercity rail travel more accessible and
+                    cost-effective.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Key City Connections</h3>
+                <p>
+                    A route concept connecting London, Birmingham and Manchester.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>More Communities Served</h3>
+                <p>
+                    Up to fifteen stops intended to connect more places along the
+                    corridor.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="route">
+    <div class="container">
+
+        <h2 class="section-title">Proposed Route</h2>
+
+        <div class="route-box">
+            <p>
+                Purplelink proposes a low-cost route between
+                <strong>London</strong> and <strong>Manchester</strong> via
+                <strong>Birmingham</strong>, serving additional communities through
+                multiple intermediate stops.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="faq" class="faq">
+    <div class="container">
+
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <details>
+            <summary>Is Purplelink currently operating trains?</summary>
+            <p>
+                No. Purplelink is a student startup concept and is not currently
+                operating rail services.
+            </p>
+        </details>
+
+        <details>
+            <summary>Who is Purplelink for?</summary>
+            <p>
+                Rail travellers seeking affordable travel between major cities and
+                communities along the route.
+            </p>
+        </details>
+
+        <details>
+            <summary>What does "15 Stops for Less" mean?</summary>
+            <p>
+                It reflects the concept of serving multiple locations while focusing
+                on affordable travel.
+            </p>
+        </details>
+
+        <details>
+            <summary>Can I book tickets through this website?</summary>
+            <p>
+                No. This website is informational only and does not provide ticket
+                sales or booking services.
+            </p>
+        </details>
+
+        <details>
+            <summary>Is Purplelink endorsed by a university?</summary>
+            <p>
+                No. No university endorsement is claimed. This is simply a student
+                startup concept.
+            </p>
+        </details>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <h3>Purplelink</h3>
+        <p>15 Stops for Less</p>
+        <p>
+            Student startup concept for affordable rail travel between London,
+            Birmingham and Manchester.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
