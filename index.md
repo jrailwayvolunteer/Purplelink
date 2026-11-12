@@ -352,7 +352,7 @@ footer{
             <summary>Can I book tickets through this website?</summary>
             <p>
                 No. This website is informational only and does not provide ticket
-                sales or booking services.
+                sales or booking services. In the future booking of tickets will be possible via this website.
             </p>
         </details>
 
