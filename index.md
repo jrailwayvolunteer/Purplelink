@@ -374,7 +374,7 @@ footer{
         <details>
             <summary>What are the Stations?</summary>
             <p>
-                The stations are London Baker Street with easy interchange to the London Underground Bakerloo, Jubilee, Hammersmith & City, Circle and Metropolitans Lines, Amersham, Aylesbury, Winslow, Milton Keynes Central, Northampton, Rugby, Coventry, Birmingham International, Thame Bridge Parkway, Wolverhampton, Stafford, Stockport and Manchester Piccadilly.
+                The stations are London Baker Street with easy interchange to the London Underground Bakerloo, Jubilee, Hammersmith & City, Circle and Metropolitans Lines, Amersham, Aylesbury, Winslow, Milton Keynes Central, Northampton, Rugby, Coventry, Birmingham International, Tame Bridge Parkway, Wolverhampton, Stafford, Stockport and Manchester Piccadilly.
             </p>
         </details>
 
